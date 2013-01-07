@@ -1,6 +1,13 @@
 # Puff
 
-TODO: Write a gem description
+Puff provides Redis integration and instrumentation for Rails.
+
+## Features
+
+* Simple integration (Put your server info in config/puff.yml)
+* High performance by default (hiredis C-based native driver)
+* Rails instrumentation (Using ActiveSupport::Notifications)
+
 
 ## Installation
 
@@ -18,7 +25,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+After put puff in your Gemfile, use the generator to generate default config file.
+
+```
+rails g puff:config
+```
+
+To use Redis in your Rails apps, using the singleton method:
+
+```
+irb(main):001:0> redis = Puff.redis
+=> #<Redis client v3.0.2 for redis://localhost:6379/0>
+irb(main):002:0> redis.ping
+=> "PONG"
+```
 
 ## Contributing
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["rl@polydice.com"]
   gem.description   = %q{Puff provides Redis integration and instrumentation for Rails.}
   gem.summary       = %q{Elagant Redis solution for Rails.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/polydice/puff"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
