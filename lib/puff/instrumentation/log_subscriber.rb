@@ -1,4 +1,4 @@
-require 'puff/Instrumentation/redis'
+require 'puff/instrumentation/redis'
 
 module Puff
   module Instrumentation
