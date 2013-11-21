@@ -1,9 +1,9 @@
 require 'redis'
 require 'redis/connection/hiredis'
 
-require "puff/version"
+require 'puff/version'
 require 'puff/engine' if defined?(::Rails::Railtie)
-require "puff/instrumentation/log_subscriber"
+require 'puff/instrumentation/log_subscriber'
 
 module Puff
   # Generic error
