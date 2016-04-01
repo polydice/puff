@@ -1,5 +1,4 @@
 require 'redis'
-require 'redis/connection/hiredis'
 
 require 'puff/version'
 require 'puff/engine' if defined?(::Rails::Railtie)

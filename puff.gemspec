@@ -20,7 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "railties", "~> 4"
   gem.add_dependency "activesupport", "~> 4"
   gem.add_dependency "redis", "~> 3.0"
-  gem.add_dependency "hiredis", "~> 0.4"
 
   gem.add_development_dependency "rake",  "~> 10.0"
 end
