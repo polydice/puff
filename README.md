@@ -5,7 +5,6 @@ Puff provides Redis integration and instrumentation for Rails.
 ## Features
 
 * Simple integration (Put your server info in config/puff.yml)
-* High performance by default (hiredis C-based native driver)
 * Rails instrumentation (Using ActiveSupport::Notifications)
 
 
@@ -22,10 +21,22 @@ And then execute:
 Or install it yourself as:
 
     $ gem install puff
+    
+## Simple Usage (just for instrumentation)
 
-## Usage
+Just add it to your `Gemfile`, done.
 
-After put puff in your Gemfile, use the generator to generate default config file.
+```
+gem 'hiredis'
+gem 'redis', :require => ["redis", "redis/connection/hiredis"]
+gem 'puff', git: "https://github.com/yyyc514/puff.git"
+```
+
+The included Rails engine will automatically start adding instrumentation to your log files without the need to do anything further.
+
+## Deprecated Usage
+
+After put puff in your `Gemfile`, use the generator to generate default config file.
 
 ```
 rails g puff:config
