@@ -6,7 +6,7 @@ Puff provides Redis instrumentation for Rails.
 
 * Rails instrumentation (Using ActiveSupport::Notifications)
 
-## Simple Usage (just for instrumentation)
+## Usage
 
 Just add it to your `Gemfile`, done.
 
