@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = Puff::VERSION
   gem.authors       = ["Richard Lee"]
   gem.email         = ["rl@polydice.com"]
-  gem.description   = %q{Puff provides Redis integration and instrumentation for Rails.}
+  gem.description   = %q{Puff provides Redis instrumentation for Rails.}
   gem.summary       = %q{Elagant Redis solution for Rails.}
   gem.homepage      = "https://github.com/polydice/puff"
 
